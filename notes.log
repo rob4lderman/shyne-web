@@ -2,7 +2,6 @@ $ express --view=pug shyne-app
 $ npm install
 $ git init
 $ DEBUG=myapp:* npm start
-
 $ chrome http://localhost:3000/
 
 $ node --version
@@ -13,5 +12,19 @@ $ npm --version
 
 $ git --version
 git version 2.12.2
+
+
+$ heroku create
+Creating app... done, ⬢ obscure-fortress-47621
+https://obscure-fortress-47621.herokuapp.com/ | https://git.heroku.com/obscure-fortress-47621.git
+
+- added Procfile:
+web: node bin/www
+
+$ git push heroku master
+$ heroku ps:scale web=1
+$ heroku open
+
+$ heroku domains:add www.shynemoney.com
 
 
