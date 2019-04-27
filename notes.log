@@ -1,0 +1,17 @@
+$ express --view=pug shyne-app
+$ npm install
+$ git init
+$ DEBUG=myapp:* npm start
+
+$ chrome http://localhost:3000/
+
+$ node --version
+v10.5.0
+
+$ npm --version
+6.1.0
+
+$ git --version
+git version 2.12.2
+
+
