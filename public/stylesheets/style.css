@@ -68,7 +68,7 @@ div.section {
 }
 
 .feature-block img.screenshot {
-    margin: 0px 16px;
+    margin: 0px 0px;
 }
 
 
@@ -76,12 +76,10 @@ div.section {
 .feature-block-wide .text
 {
     flex: 1;
-    margin: 0px 16px;
+    margin-left: 32px;
+    margin-right: 8px;
 }
 
-.feature-block img.screenshot {
-    margin: 0px 16px;
-}
 
 .feature-block-wide {
     display: flex;
@@ -135,4 +133,14 @@ img.screenshot {
 
 .sm {
     display: flex;
+}
+
+.feature-block .text,
+.feature-block-wide .text
+{
+    flex: 1;
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
 }
