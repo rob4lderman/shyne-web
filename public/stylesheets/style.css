@@ -108,6 +108,9 @@ div.shyne-different {
 }
 
 
+.sm {
+    display: none;
+}
 
 
 @media only screen and (max-width: 450px) {
@@ -118,5 +121,14 @@ img.screenshot {
     height: 323px;
 }
 
+.pre {
+    white-space: normal;
+}
 
+.lg {
+    display: none;
+}
+
+.sm {
+    display: flex;
 }
