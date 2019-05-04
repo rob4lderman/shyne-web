@@ -11,6 +11,28 @@ var privacyRouter = require('./routes/privacy');
 
 var app = express();
 
+/**
+ * HTTPS
+ * On heroku (production), SSL is handled by heroku's router/firewall and
+ * our app only opens a non-SSL port and always receives non-SSL traffic
+ * behind the firewall.
+ *
+ * To force clients to use SSL, we must use the x-forwarded-proto header
+ * to check if the original client request went to https. If not, redirect them.
+ *
+ */
+// -rx- if ( process.env.NODE_ENV == 'production' ) {
+    app.use( (req, res, next) => {
+        if (req.headers['x-forwarded-proto'] != 'https' && req.hostname != "localhost") {
+            res.redirect(301, 'https://' + req.hostname + req.originalUrl);
+        } else {
+            next();
+        }
+    });
+// -rx- } 
+
+
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -41,5 +63,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+
 
 module.exports = app;
