@@ -8,9 +8,13 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
 
+.terms-container {
+    padding: 0px 8px;
+}
 
 img.screenshot {
     /* ~ 0.54 ratio, 1.85 */

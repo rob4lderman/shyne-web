@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
         title: 'Privacy Policy',
         app_name: 'Shyne',
         biz_name: 'Robert G Alderman',
-        contact_email: 'robertgalderman@gmail.com',
+        contact_email: 'info@shynemoney.com',
     });
 });
 
