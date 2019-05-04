@@ -35,6 +35,7 @@ img.screenshot {
 
 .flex.row {
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex.row.center {
@@ -50,7 +51,7 @@ div.banner {
 
 div.section {
     border-top: solid 1px #a09f8c;
-    padding: 64px 0px;
+    padding: 64px 4px;
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +83,7 @@ div.section {
     display: flex;
     flex-flow: row-reverse wrap;
     align-self: center;
-    max-width: 800px;
+    max-width: 768px;
 }
 
 
@@ -104,4 +105,18 @@ div.shyne-different {
 
 .shyne-different li {
     margin: 8px 0px;
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+
+img.screenshot {
+    /* ~ 0.54 ratio, 1.85 */
+    width: 175px;  
+    height: 323px;
+}
+
+
 }
