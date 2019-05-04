@@ -2,22 +2,156 @@ extends layout
 
 block content
 
-    div(style="display:flex; flex-direction:column; align-items:center; justify-content:center;")
-        img(src="/images/shyne-icon-transparent.png" 
+    // div(style="display:flex; flex-direction:column; align-items:center; justify-content:center;")
+    div.section.banner
+        img(
+            src="/images/shyne-icon-transparent.png" 
             height="200" 
             width="200"
-            )
-        p(style="margin-top: 0px; position: relative; top: -40px;") Shed light on your money
-
-        p(style="margin-top: 40px") Coming soon.
-
-        p(style="margin-top: 0px") Contact us at info@shynemoney.com.
-
-    // p Why makes Shyne different?
-
-    // p
-    //     | Flexible, personalized organization: All money-managing apps out there auto categorize into the standard generic hierarchical categories, and Shyne is no exception.
-    //     | Shyne allows you to layer over that with your own tags, giving you the power to categorize your data to suit your needs.
+        )
+        p(style="margin-top: 0px; position: relative; top: -40px;") 
+            | Shed light on your money
 
 
-    
+        h1.text-center.pre(style="margin-top: 0px; ") 
+            | Shed light on your money and 
+            | get a clear picture of your financial health 
+            | with Shyne.
+
+        h1(style="margin: 64px 0px") Coming soon.
+
+    div.section.flex.row.center
+        img.screenshot(src="/images/shyne-1242x2208/welcome.png")
+        img.screenshot(src="/images/shyne-1242x2208/inbox.png")
+        img.screenshot(src="/images/shyne-1242x2208/charts.png")
+
+    div.section
+        div.feature-block
+            div.text
+                h2 Connect everything.
+
+                p
+                    | Shyne lets you connect your online financial accounts and aggregates 
+                    | your data all in one place, giving you a complete picture of your finances.
+
+            img.screenshot(src="/images/shyne-1242x2208/select-your-bank.png")
+
+
+    div.section
+        div.feature-block
+            div.text
+                h2 Total control.
+                
+                p
+                    | Shyne gives you unmatched flexibility and control over how you track your expenses, 
+                    | with auto-categorization and custom tagging.
+
+                h3 Auto-categorizing
+                
+                p 
+                    | Shyne auto-categorizes your transactions into general categories like "Restaurants" and "Automotive".  
+
+                h3 Custom tagging
+                
+                p
+                    | On top of auto-categorizing, Shyne also gives you the power to organize your expenses 
+                    | to suit your specific needs, with an easy and flexible tagging system. 
+                p
+                    | Keep track of your business expenses, your holiday budget, how much you're spending on 
+                    | each of your kids, or whatever else you can think of by simply creating a tag for it.  
+                p
+                    | Shyne even learns your tagging patterns and auto-tags new transactions for you. 
+
+            img.screenshot(src="/images/shyne-1242x2208/inbox.png")
+
+    div.section
+        div.feature-block
+
+            div.text
+                h2 Spending projections.
+                p
+                    | Shyne uses machine intelligence to analyze your spending patterns and project your expenses 
+                    | for the weeks ahead, giving you a preview of what's to come and helping you plan.
+
+            img.screenshot(src="/images/shyne-1242x2208/recent-upcoming-trxs.png")
+
+
+    div.section
+        div.feature-block-wide
+            div.text
+                h2 Automatic bill reminders.
+                p
+                    | Shyne detects your recurring payments and automatically sends you a reminder of your upcoming 
+                    | bills for the week ahead. 
+                p
+                    | You can also configure your own bill reminders.
+
+            img.screenshot(src="/images/shyne-1242x2208/push-notifs.png")
+            img.screenshot(src="/images/shyne-1242x2208/bill-reminders.png")
+
+    div.section
+        div.feature-block-wide
+            div.text
+                h2 Charts and more.
+                p 
+                    | Shyne also features custom bar charts and pie charts, split transactions, the ability to track 
+                    | your non-account cash transactions, and more.
+            img.screenshot(src="/images/shyne-1242x2208/charts.png")
+            img.screenshot(src="/images/shyne-1242x2208/liquid-funds.png")
+
+
+
+    div.section
+        div.feature-block
+            div.text
+                h2 Security and privacy.
+                p
+                    | Shyne is secure and uses industry-standard bank-level security protocols to encrypt and protect your data. 
+
+                h3 Your data is yours
+                p 
+                    | Shyne lets you download your transaction history and/or delete it from our servers with the tap of a button. 
+
+            img.screenshot(src="/images/shyne-1242x2208/security.png")
+
+
+    div.section
+        div.feature-block
+            div.text
+                h2 Free to try.
+                p 
+                    | Shyne offers a 30-day free trial, after which you can choose to be billed monthly, 
+                    | or yearly at a discount.  Cancel any time, no questions asked.
+
+            img.screenshot(src="/images/shyne-1242x2208/free-to-try.png")
+
+ 
+    div.section
+        div.shyne-different
+            h2 What makes Shyne different?
+
+            p.text-center.pre
+                | There are a lot of personal finance and budgeting apps out there, 
+                | so why choose Shyne?
+
+            p
+                | Shyne was built for and by people who want... 
+
+            ol
+                li An easy and intuitive way to review every transaction going through their accounts -- i.e. an "Inbox".
+                li The power to organize their expenses to suit their specific needs -- i.e. an easy and flexible tagging system.
+                li To receive automatic reminders for upcoming bills, and to preview their upcoming expenses at a glance, so they can plan their spending accordingly.
+
+            
+            p.text-center.pre
+                | If that sounds like you, then give Shyne a try.  
+                | First month is free, cancel any time.
+
+
+
+    div.section
+        div.flex.column.center
+            h1 Coming soon.
+
+            p Contact us at 
+                a(href="mailto:info@shynemoney.com") info@shynemoney.com

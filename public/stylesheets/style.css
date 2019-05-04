@@ -1,8 +1,107 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Lato, "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+
+img.screenshot {
+    /* ~ 0.54 ratio, 1.85 */
+    /*
+    width: 200px;  
+    height: 370px;
+    */
+    width: 240px;  
+    height: 444px;
+}
+
+.flex {
+    display: flex;
+}
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.column.center {
+    align-items: center;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.row.center {
+    justify-content: center;
+}
+
+div.banner {
+    display: flex;
+    flex-direction: column;
+    border-top: solid 0px !important;
+    align-items: center;
+}
+
+div.section {
+    border-top: solid 1px #a09f8c;
+    padding: 64px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-block {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    max-width: 600px;
+    align-self: center;
+}
+
+.feature-block img.screenshot {
+    margin: 0px 16px;
+}
+
+
+.feature-block .text,
+.feature-block-wide .text
+{
+    flex: 1;
+    margin: 0px 16px;
+}
+
+.feature-block img.screenshot {
+    margin: 0px 16px;
+}
+
+.feature-block-wide {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-self: center;
+    max-width: 800px;
+}
+
+
+div.shyne-different {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    align-self: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pre {
+    white-space: pre-wrap;
+}
+
+.shyne-different li {
+    margin: 8px 0px;
 }
