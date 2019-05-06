@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 64px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -120,6 +120,10 @@ div.shyne-different {
 
 
 @media only screen and (max-width: 450px) {
+
+body {
+    letter-spacing: 0.2px;
+}
 
 img.screenshot {
     /* ~ 0.54 ratio, 1.85 */
