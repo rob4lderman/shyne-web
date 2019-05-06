@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 64px;
+  letter-spacing: 0.4px;
 }
 
 a {
@@ -109,7 +110,7 @@ div.shyne-different {
 }
 
 .shyne-different li {
-    margin: 8px 0px;
+    margin: 12px 0px;
 }
 
 
