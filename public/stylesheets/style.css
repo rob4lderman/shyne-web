@@ -65,7 +65,7 @@ div.section {
 
 .feature-block {
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap;
     max-width: 600px;
     align-self: center;
 }
@@ -86,7 +86,7 @@ div.section {
 
 .feature-block-wide {
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap;
     align-self: center;
     max-width: 768px;
 }
@@ -144,6 +144,7 @@ img.screenshot {
     flex: 1;
     margin-left: 16px;
     margin-right: 8px;
+    min-width: 150px;
 }
 
 }
