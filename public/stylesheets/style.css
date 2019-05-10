@@ -1,9 +1,41 @@
+/**
+ *
+ *
+ * background-repeat
+ * no-repeat – does not tile
+ * repeat-x – tiles horizontally
+ * repeat-y – tiles vertically
+ *
+ * background-attachment
+ * scroll
+ * fixed
+ *
+ * background-position
+ * top
+ * right
+ * bottom
+ * left
+ * center
+ * any combination of the above (e.g., top center)
+ *
+ *
+ * background-size
+ * auto (the default value)
+ * a length, setting the width and height of the background image (in any valid CSS length units); e.g., background-size:20px 40px.
+ * a percentage, setting the width and height as a percentage of the parent element; e.g., background-size:50% 50%.
+ * cover, scaling the background image to be as large as possible so that the area of the element is completely covered by the background image; some part of the image may not be shown.
+ * center
+ * contain, scaling the background image to the largest size so that its width and height fit inside the element.
+ *
+ *
+ */
+
 body {
   font: 14px Lato, "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 64px;
+  padding-bottom: 0px;
   letter-spacing: 0.5px;
 }
 
@@ -15,6 +47,15 @@ a {
   text-decoration: none;
 }
 
+a.attribution {
+    color: #c5bcbc;
+    /*
+    position: absolute;
+    bottom: 0px;
+    right: 12px;
+    */
+    font-size: 8px;
+}
 
 .terms-container {
     padding: 0px 8px;
@@ -50,18 +91,69 @@ img.screenshot {
     justify-content: center;
 }
 
-div.banner {
-    display: flex;
-    flex-direction: column;
-    border-top: solid 0px !important;
-    align-items: center;
-}
 
 div.section {
     border-top: solid 1px #a09f8c;
     padding: 64px 4px;
     display: flex;
     flex-direction: column;
+    /*
+    background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5));
+    */
+    background-image: linear-gradient(to top, #e0f2fd, #ffffff);
+}
+
+div.banner {
+    background-image: url("/images/sunshine-1400.png");
+    background-size: cover;
+    /*
+    background-repeat:
+    background-attachment:
+    background-position:
+    flex-direction: column;
+    align-items: center;
+    flex-flow: row wrap;
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 0px !important;
+}
+
+div.banner-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.banner-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 0 24px;
+}
+
+div.banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0 24px;
+}
+
+.title-logo {
+    width: 300px;
+    height: 300px;
+}
+
+.banner-img1 {
+    position: relative;
+    top: 40px;
+}
+
+.banner-img2 {
+    position: relative;
+    top: 32px;
 }
 
 .feature-block {
@@ -119,6 +211,15 @@ div.shyne-different {
 }
 
 
+/**
+ * iPhone SE: 320 x 568
+ * iPhone 6,7,8: 375 x 667
+ * iPhone 8 Plus: 414 x 736
+ * iPhone X: 375 x 812, 
+ * iPad Pro: 768 x 1024, 1024 x 1366
+ * 
+ *
+ */
 @media only screen and (max-width: 450px) {
 
 body {
@@ -150,6 +251,12 @@ img.screenshot {
     margin-left: 16px;
     margin-right: 8px;
     min-width: 150px;
+}
+
+
+.banner-img1,
+.banner-img2 {
+    position: static;
 }
 
 }

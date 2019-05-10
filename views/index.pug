@@ -4,25 +4,30 @@ block content
 
     // div(style="display:flex; flex-direction:column; align-items:center; justify-content:center;")
     div.section.banner
-        img(
-            src="/images/shyne-icon-transparent.png" 
-            height="200" 
-            width="200"
-        )
-        p(style="margin-top: 0px; position: relative; top: -40px;") 
-            | Shed light on your money
+        div.banner-content
+            div.banner-left
+                img.title-logo(
+                    src="/images/shyne-icon-transparent.png" 
+                )
+                p(style="margin-top: 0px; position: relative; top: -70px;") 
+                    | Shed light on your money
 
 
-        h1.text-center.pre(style="margin: 0px 16px; ") 
-            | Get a clear picture of your financial health 
-            | with Shyne.
+                h1.text-center.pre(style="margin: 0px 16px; ") 
+                    | Get a clear picture 
+                    | of your financial health 
+                    | with Shyne.
 
-        h1(style="margin: 64px 0px") Coming soon.
+                h1(style="margin: 64px 0px") Coming soon.
+            div.banner-right
+                img.screenshot.banner-img1(src="/images/shyne-1242x2208/charts.png")
+                img.screenshot.banner-img2(src="/images/shyne-1242x2208/inbox.png")
+        
 
-    div.section.flex.row.center
-        img.screenshot.lg(src="/images/shyne-1242x2208/welcome.png")
-        img.screenshot(src="/images/shyne-1242x2208/inbox.png")
-        img.screenshot(src="/images/shyne-1242x2208/charts.png")
+    // div.section.flex.row.center
+    //     img.screenshot.lg(src="/images/shyne-1242x2208/welcome.png")
+    //     img.screenshot(src="/images/shyne-1242x2208/inbox.png")
+    //     img.screenshot(src="/images/shyne-1242x2208/charts.png")
 
     div.section
         div.feature-block
@@ -188,4 +193,9 @@ block content
             p
                 a(href="/terms") Terms  
                 | | 
-                a(href="/privacy") Privacy
+                a(href="/privacy") Privacy 
+                // | | 
+                // <a href="https://pngtree.com/">Graphics from pngtree.com</a>
+
+            p
+                a.attribution(href="https://pngtree.com/") Graphics from pngtree.com
