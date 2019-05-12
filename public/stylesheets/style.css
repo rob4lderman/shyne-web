@@ -141,6 +141,10 @@ div.banner-right {
     margin: 0 24px;
 }
 
+.highlight {
+    text-shadow: -1px -1px 1px white; 
+}
+
 .title-logo {
     width: 300px;
     height: 300px;
