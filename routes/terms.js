@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 	res.render('terms', { 
         title: 'Terms and Conditions',
         app_name: 'Shyne',
-        biz_name: 'Robert G Alderman',
+        biz_name: 'Long Connections LLC',
     });
 });
 

@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 	res.render('privacy', { 
         title: 'Privacy Policy',
         app_name: 'Shyne',
-        biz_name: 'Robert G Alderman',
+        biz_name: 'Long Connections LLC',
         contact_email: 'info@shynemoney.com',
     });
 });
