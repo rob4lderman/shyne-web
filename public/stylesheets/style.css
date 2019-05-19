@@ -214,6 +214,45 @@ div.shyne-different {
     display: none;
 }
 
+.border-top {
+    border-top: solid 1px #a09f8c;
+}
+
+.border-bottom {
+    border-bottom: solid 1px #a09f8c;
+}
+
+
+div.footer-section {
+    padding: 12px 12px;
+}
+
+div.footer-content {
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+}
+
+span.footer-sep {
+    margin: 0px 12px;
+}
+
+span.footer-word {
+    color: #857c7c;
+    font-size: 80%;
+}
+
+
+/** BEGIN 768px */
+@media only screen and (max-width: 768px) {
+
+div.footer-content {
+    flex-direction: column;
+    width: 100%;
+}
+
+}
+/** END 768px */
 
 /**
  * iPhone SE: 320 x 568
