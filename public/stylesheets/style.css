@@ -251,6 +251,10 @@ div.footer-content {
     width: 100%;
 }
 
+div.banner-right {
+    margin: 0px 0px;
+}
+
 }
 /** END 768px */
 
